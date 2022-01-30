@@ -1,0 +1,22 @@
+curl --request POST \
+  --url http://localhost:3000/simulation \
+  --header 'Content-Type: application/json' \
+  --data '{
+	"topic" : "pkg_gen",
+	"marketWiseData": {
+		"1": {
+			"marketId": "1",
+			"message": {
+				"marketId": "1"
+			},
+			"totalMessageCount": 1000
+		},
+		"2": {
+			"marketId": "2",
+			"message": {
+				"marketId": "2"
+			},
+			"totalMessageCount": 1000
+		}
+	}
+}'
